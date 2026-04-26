@@ -1,0 +1,144 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  ADMIN
+  MANAGER
+  MEMBER
+}
+
+enum ContributionStatus {
+  PAID
+  OVERDUE
+  PENDING
+}
+
+enum DocumentCategory {
+  ADMINISTRATIVE
+  MEDICAL
+  PROOF
+}
+
+enum DocumentAccess {
+  ADMIN_ONLY
+  MANAGER
+  MEMBER
+}
+
+enum SocialOperationType {
+  MEDICAL
+  FINANCIAL
+  SOCIAL
+  EMERGENCY
+  DEATH
+  EXCEPTIONAL
+}
+
+enum SocialOperationStatus {
+  IN_PROGRESS
+  VALIDATED
+  REJECTED
+}
+
+model User {
+  id         String     @id @default(cuid())
+  email      String     @unique
+  password   String
+  name       String
+  role       Role
+  memberId   String?
+  member     Member?    @relation(fields: [memberId], references: [id])
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  auditLogs  AuditLog[]
+}
+
+model Member {
+  id                        String            @id @default(cuid())
+  cardNumber                String            @unique
+  photoUrl                  String?
+  firstName                 String
+  lastName                  String
+  functionTitle             String
+  grade                     String
+  birthDate                 DateTime
+  phone                     String
+  address                   String
+  retirementDate            DateTime
+  monthlyContributionTarget Int
+  qrValue                   String
+  createdAt                 DateTime          @default(now())
+  updatedAt                 DateTime          @updatedAt
+  contributions             Contribution[]
+  documents                 Document[]
+  socialOperations          SocialOperation[]
+  users                     User[]
+}
+
+model Contribution {
+  id            String             @id @default(cuid())
+  memberId      String
+  member        Member             @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  year          Int
+  month         Int
+  amount        Int
+  status        ContributionStatus
+  paidAt        DateTime?
+  receiptNumber String             @unique
+  recordedBy    String
+  createdAt     DateTime           @default(now())
+
+  @@unique([memberId, year, month])
+}
+
+model Document {
+  id          String           @id @default(cuid())
+  memberId    String
+  member      Member           @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  title       String
+  category    DocumentCategory
+  mimeType    String
+  size        Int
+  storagePath String
+  accessLevel DocumentAccess
+  uploadedBy  String
+  uploadedAt  DateTime         @default(now())
+}
+
+model SocialOperation {
+  id          String                @id @default(cuid())
+  memberId    String
+  member      Member                @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  type        SocialOperationType
+  description String
+  amount      Int?
+  date        DateTime
+  status      SocialOperationStatus
+  createdBy   String
+  createdAt   DateTime              @default(now())
+}
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  userId      String?
+  user        User?    @relation(fields: [userId], references: [id])
+  actor       String
+  action      String
+  entity      String
+  entityLabel String
+  ip          String
+  details     String?
+  timestamp   DateTime @default(now())
+}
+
+model AppSettings {
+  id                        String @id @default("singleton")
+  monthlyContributionAmount Int    @default(5000)
+  fiscalYear                Int    @default(2026)
+}

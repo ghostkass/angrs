@@ -1,0 +1,350 @@
+{
+  "settings": {
+    "monthlyContributionAmount": 5000,
+    "fiscalYear": 2026
+  },
+  "members": [
+    {
+      "id": "mbr-001",
+      "cardNumber": "ANGRS-0012",
+      "photoUrl": null,
+      "firstName": "Ibrahima",
+      "lastName": "Ba",
+      "functionTitle": "Ancien chef de brigade",
+      "grade": "Adjudant-chef",
+      "birthDate": "1962-03-14",
+      "phone": "+221 77 001 12 34",
+      "address": "Rufisque, Dakar",
+      "retirementDate": "2022-06-30",
+      "monthlyContributionTarget": 5000,
+      "qrValue": "ANGRS|ANGRS-0012|IBRAHIMA BA",
+      "createdAt": "2024-02-11T09:00:00.000Z"
+    },
+    {
+      "id": "mbr-002",
+      "cardNumber": "ANGRS-0038",
+      "photoUrl": null,
+      "firstName": "Fatou",
+      "lastName": "Diallo",
+      "functionTitle": "Ancienne formatrice",
+      "grade": "Capitaine",
+      "birthDate": "1965-11-08",
+      "phone": "+221 76 412 44 11",
+      "address": "Saint-Louis",
+      "retirementDate": "2021-10-15",
+      "monthlyContributionTarget": 5000,
+      "qrValue": "ANGRS|ANGRS-0038|FATOU DIALLO",
+      "createdAt": "2024-03-03T10:30:00.000Z"
+    },
+    {
+      "id": "mbr-003",
+      "cardNumber": "ANGRS-0054",
+      "photoUrl": null,
+      "firstName": "Moussa",
+      "lastName": "Sow",
+      "functionTitle": "Ancien officier logistique",
+      "grade": "Lieutenant",
+      "birthDate": "1967-01-21",
+      "phone": "+221 70 890 22 12",
+      "address": "Thiès",
+      "retirementDate": "2023-01-31",
+      "monthlyContributionTarget": 5000,
+      "qrValue": "ANGRS|ANGRS-0054|MOUSSA SOW",
+      "createdAt": "2024-03-19T11:20:00.000Z"
+    },
+    {
+      "id": "mbr-004",
+      "cardNumber": "ANGRS-0067",
+      "photoUrl": null,
+      "firstName": "Aminata",
+      "lastName": "Gueye",
+      "functionTitle": "Ancienne responsable administrative",
+      "grade": "Commandant",
+      "birthDate": "1961-08-16",
+      "phone": "+221 78 399 11 55",
+      "address": "Mbour",
+      "retirementDate": "2020-12-31",
+      "monthlyContributionTarget": 5000,
+      "qrValue": "ANGRS|ANGRS-0067|AMINATA GUEYE",
+      "createdAt": "2024-04-07T12:15:00.000Z"
+    },
+    {
+      "id": "mbr-005",
+      "cardNumber": "ANGRS-0089",
+      "photoUrl": null,
+      "firstName": "Cheikh",
+      "lastName": "Fall",
+      "functionTitle": "Ancien commandant d'unite",
+      "grade": "Colonel",
+      "birthDate": "1959-05-27",
+      "phone": "+221 75 555 66 77",
+      "address": "Kaolack",
+      "retirementDate": "2019-05-31",
+      "monthlyContributionTarget": 5000,
+      "qrValue": "ANGRS|ANGRS-0089|CHEIKH FALL",
+      "createdAt": "2024-04-18T16:40:00.000Z"
+    },
+    {
+      "id": "mbr-006",
+      "cardNumber": "ANGRS-0103",
+      "photoUrl": null,
+      "firstName": "Mariama",
+      "lastName": "Seck",
+      "functionTitle": "Ancienne chargee sociale",
+      "grade": "Adjudant",
+      "birthDate": "1966-02-04",
+      "phone": "+221 77 632 21 10",
+      "address": "Ziguinchor",
+      "retirementDate": "2022-11-30",
+      "monthlyContributionTarget": 5000,
+      "qrValue": "ANGRS|ANGRS-0103|MARIAMA SECK",
+      "createdAt": "2024-05-22T14:12:00.000Z"
+    }
+  ],
+  "contributions": [
+    {
+      "memberId": "mbr-006",
+      "month": 4,
+      "year": 2026,
+      "amount": 5000,
+      "recordedBy": "Colonel Mamadou Sarr",
+      "id": "5cb490e4-0124-41ed-a6fb-e00a3bbaa4a9",
+      "paidAt": "2026-04-26T16:31:12.190Z",
+      "status": "PAID",
+      "receiptNumber": "RCT-2026-04-006"
+    },
+    {
+      "id": "ctr-paid-1",
+      "memberId": "mbr-001",
+      "year": 2026,
+      "month": 1,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-01-05T10:00:00.000Z",
+      "receiptNumber": "RCT-2026-01-001",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-paid-2",
+      "memberId": "mbr-001",
+      "year": 2026,
+      "month": 2,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-02-05T10:00:00.000Z",
+      "receiptNumber": "RCT-2026-02-001",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-paid-3",
+      "memberId": "mbr-001",
+      "year": 2026,
+      "month": 3,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-03-05T10:00:00.000Z",
+      "receiptNumber": "RCT-2026-03-001",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-paid-4",
+      "memberId": "mbr-001",
+      "year": 2026,
+      "month": 4,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-04-05T10:00:00.000Z",
+      "receiptNumber": "RCT-2026-04-001",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-paid-5",
+      "memberId": "mbr-001",
+      "year": 2026,
+      "month": 5,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-05-05T10:00:00.000Z",
+      "receiptNumber": "RCT-2026-05-001",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-paid-6",
+      "memberId": "mbr-001",
+      "year": 2026,
+      "month": 6,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-06-05T10:00:00.000Z",
+      "receiptNumber": "RCT-2026-06-001",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-m2-1",
+      "memberId": "mbr-002",
+      "year": 2026,
+      "month": 1,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-01-07T12:00:00.000Z",
+      "receiptNumber": "RCT-2026-01-002",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-m2-2",
+      "memberId": "mbr-002",
+      "year": 2026,
+      "month": 2,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-02-07T12:00:00.000Z",
+      "receiptNumber": "RCT-2026-02-002",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-m2-3",
+      "memberId": "mbr-002",
+      "year": 2026,
+      "month": 3,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-03-07T12:00:00.000Z",
+      "receiptNumber": "RCT-2026-03-002",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-m2-4",
+      "memberId": "mbr-002",
+      "year": 2026,
+      "month": 4,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-04-07T12:00:00.000Z",
+      "receiptNumber": "RCT-2026-04-002",
+      "recordedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "ctr-m3-1",
+      "memberId": "mbr-003",
+      "year": 2026,
+      "month": 1,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-01-11T09:15:00.000Z",
+      "receiptNumber": "RCT-2026-01-003",
+      "recordedBy": "Colonel Mamadou Sarr"
+    },
+    {
+      "id": "ctr-m4-1",
+      "memberId": "mbr-004",
+      "year": 2026,
+      "month": 1,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-01-09T08:00:00.000Z",
+      "receiptNumber": "RCT-2026-01-004",
+      "recordedBy": "Colonel Mamadou Sarr"
+    },
+    {
+      "id": "ctr-m5-1",
+      "memberId": "mbr-005",
+      "year": 2026,
+      "month": 1,
+      "amount": 5000,
+      "status": "PAID",
+      "paidAt": "2026-01-13T08:00:00.000Z",
+      "receiptNumber": "RCT-2026-01-005",
+      "recordedBy": "Colonel Mamadou Sarr"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-001",
+      "memberId": "mbr-001",
+      "title": "Arrete de retraite",
+      "category": "ADMINISTRATIVE",
+      "mimeType": "text/plain",
+      "size": 2840,
+      "storagePath": "/uploads/documents/sample-arrete.txt",
+      "uploadedAt": "2026-01-13T08:00:00.000Z",
+      "accessLevel": "MANAGER",
+      "uploadedBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "doc-002",
+      "memberId": "mbr-004",
+      "title": "Note medicale",
+      "category": "MEDICAL",
+      "mimeType": "text/plain",
+      "size": 1480,
+      "storagePath": "/uploads/documents/sample-note.txt",
+      "uploadedAt": "2026-02-22T11:40:00.000Z",
+      "accessLevel": "ADMIN_ONLY",
+      "uploadedBy": "Colonel Mamadou Sarr"
+    }
+  ],
+  "socialOperations": [
+    {
+      "id": "soc-001",
+      "memberId": "mbr-001",
+      "type": "MEDICAL",
+      "description": "Prise en charge ophtalmologique et prescription post-consultation.",
+      "amount": 125000,
+      "date": "2026-02-18",
+      "status": "VALIDATED",
+      "createdBy": "Commandant Awa Ndiaye"
+    },
+    {
+      "id": "soc-002",
+      "memberId": "mbr-004",
+      "type": "DEATH",
+      "description": "Accompagnement de la famille suite au deces d'un proche.",
+      "amount": 300000,
+      "date": "2026-03-03",
+      "status": "IN_PROGRESS",
+      "createdBy": "Colonel Mamadou Sarr"
+    },
+    {
+      "id": "soc-003",
+      "memberId": "mbr-006",
+      "type": "FINANCIAL",
+      "description": "Appui ponctuel pour frais de deplacement medical.",
+      "amount": 85000,
+      "date": "2026-04-12",
+      "status": "VALIDATED",
+      "createdBy": "Commandant Awa Ndiaye"
+    }
+  ],
+  "audit": [
+    {
+      "actor": "Colonel Mamadou Sarr",
+      "action": "Enregistrement cotisation",
+      "entity": "contribution",
+      "entityLabel": "RCT-2026-04-006",
+      "ip": "127.0.0.1",
+      "details": "Paiement 5000 XOF pour mbr-006.",
+      "id": "36cf7b6f-1118-406f-a11a-acf820745d19",
+      "timestamp": "2026-04-26T16:31:12.193Z"
+    },
+    {
+      "id": "aud-001",
+      "actor": "Colonel Mamadou Sarr",
+      "action": "Validation aide sociale",
+      "entity": "social_operation",
+      "entityLabel": "soc-003",
+      "timestamp": "2026-04-12T12:15:00.000Z",
+      "ip": "127.0.0.1",
+      "details": "Validation d'une aide financiere de 85 000 XOF."
+    },
+    {
+      "id": "aud-002",
+      "actor": "Commandant Awa Ndiaye",
+      "action": "Enregistrement cotisation",
+      "entity": "contribution",
+      "entityLabel": "RCT-2026-04-002",
+      "timestamp": "2026-04-08T09:10:00.000Z",
+      "ip": "127.0.0.1",
+      "details": "Paiement du mois d'avril pour Fatou Diallo."
+    }
+  ]
+}
